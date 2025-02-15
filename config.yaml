@@ -1,0 +1,7 @@
+HOST: "localhost"
+PORT: "3306"
+DATABASE: "tyServer"
+USER: "root"
+PASSWORD: "admin"
+SERVERPORT: "3000"
+CONNECTIONPOLL: 10
