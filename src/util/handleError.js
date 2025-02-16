@@ -35,8 +35,8 @@ app.on('error',(error,ctx)=>{
   
     // 设置响应头，表明响应内容为 JSON 格式
    ctx.set('Content-Type', 'application/json');
-    ctx.body = JSON.stringify({
+    ctx.body = {
       code,
       message
-    });
+    };
   })
