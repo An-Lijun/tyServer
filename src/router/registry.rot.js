@@ -1,10 +1,10 @@
 
 const Router =require('@koa/router')
-const controller =require('../controller/registry.ctl')
+const RegistryControoller =require('../controller/registry.ctl')
 
 const userRouter =new Router({
   prefix:'/reigstry'
 })
 
-userRouter.post('/',controller.create)
+userRouter.post('/',RegistryControoller.validate,RegistryControoller.create)
 module.exports=userRouter
