@@ -13,7 +13,7 @@ userRouter.post('/registry',
   valiUserNotExist,
   UserController.create
 )
-
+  
 userRouter.post('/login',
   valiUserPwd,
   valiUserExist,
